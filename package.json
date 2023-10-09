@@ -1,0 +1,22 @@
+{
+  "name": "tailwind-css",
+  "version": "1.0.0",
+  "description": "Create a Web App using Tailwind Css",
+  "main": "index.js",
+  "scripts": {
+   "build-css":"tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anna-12-Mer/tailwind-css.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anna-12-Mer/tailwind-css/issues"
+  },
+  "homepage": "https://github.com/Anna-12-Mer/tailwind-css#readme",
+  "dependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
