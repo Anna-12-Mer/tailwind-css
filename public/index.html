@@ -6,26 +6,43 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="text-gray-600">
-    <div><!-- content wrapper -->
-        <div>
+    <div class=" grid md:grid-cols-3"><!-- content wrapper -->
+        <div class="md:col-span-1">
             <nav>
                 <div>
                     <h1 class="font-bold uppercase p-4 border-b border-gray-100">
-                        <a href="/">Food Menu</a>
+                        <a href="/" class="hover:text-gray-700">Food Menu</a>
                     </h1>
                 </div>
                 <ul>
-                    <li class="text-gray-700 font-bold"><a href="#"><span>Home</span></a></li>
-                    <li><a href="#"><span>About</span></a></li>
-                    <li><a href="#"><span>Contact</span></a></li>
+                    <li class="text-gray-700 font-bold"><a href="#"><span>Home</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a></li>
+                    <li><a href="#"><span>About</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5">
+                        <path fill-rule="evenodd"
+                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM8.94 6.94a.75.75 0 11-1.061-1.061 3 3 0 112.871 5.026v.345a.75.75 0 01-1.5 0v-.5c0-.72.57-1.172 1.081-1.287A1.5 1.5 0 108.94 6.94zM10 15a1 1 0 100-2 1 1 0 000 2z"
+                            clip-rule="evenodd" />
+                    </svg>
+</a></li>
+                    <li><a href="#"><span>Contact</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5">
+                        <path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z" />
+                        <path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z" />
+                    </svg>
+</a></li>
                 </ul>
             </nav>
         </div> 
         <!-- end nav -->
-        <main class="px-16 py-6 bg-gray-100" >
+        <main class="px-16 py-6 bg-gray-100 md:col-span-2" >
             <div class="flex justify-center md:justify-end">
-                <a href="#" class="text-primary">Log in</a>
-                <a href="#" class="text-primary ml-2">Sign up</a>
+                <a href="#" class="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white">Log in</a>
+                <a href="#" class="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary  hover:text-white">Sign up</a>
             </div>
 
             <header>
@@ -35,15 +52,54 @@
 
             <div>
                 <h4 class="font-bold mt-12 pb-2 border-b border-gray-200"> Lastest Recipes </h4>
-                <div class="mt-8"> 
+                <div class="mt-8 grid lg:grid-cols-3 gap-10"> 
                     <!-- cards go here -->
-                    <div class="bg-white rounded overflow-hidden shadow-md">
+                    <div class="card hover:shadow-lg">
                         <img src="img/rep-1.webp" alt="rep-1" class="w-full h-32 sm:h-48 object-cover"><!-- imge of card -->
                         <div class="m-4"><!-- content of card -->
                             <span class="font-bold">5 Bean Chilli Stew</span>
                             <span class="block text-gray-500 text-sm">Recipe by Anna</span>
                         </div>
+                        <div class="badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 inline-block">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                            <span> 25 mins</span>
+                        </div>
                     </div> 
+                            <div class="card hover:shadow-lg">
+                                <img src="img/rep-2.webp" alt="rep-1" class="w-full h-32 sm:h-48 object-cover"><!-- imge of card -->
+                                <div class="m-4"><!-- content of card -->
+                                    <span class="font-bold">Veg noodles</span>
+                                    <span class="block text-gray-500 text-sm">Recipe by magappaa</span>
+                                </div>
+                                <div class="badge">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 inline-block">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    <span> 25 mins</span>
+                                </div>
+                            </div>
+                                    <div class="card hover:shadow-lg">
+                                        <img src="img/rep-3.webp" alt="rep-1" class="w-full h-32 sm:h-48 object-cover"><!-- imge of card -->
+                                        <div class="m-4"><!-- content of card -->
+                                            <span class="font-bold">Tufu</span>
+                                            <span class="block text-gray-500 text-sm">Recipe by Anna</span>
+                                        </div>
+                                        <div class="badge">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 inline-block">
+                                                    <path fill-rule="evenodd"
+                                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            <span> 15 mins</span>
+                                        </div>
+                                    </div>
                 </div>
 
                 <h4 class="font-bold mt-12 pb-2 border-b border-gray-200"> Most Popular </h4>
@@ -52,7 +108,7 @@
                 </div>
 
                 <div class="flex justify-center">
-                    <div class="bg-secondary-100">Load more</div>
+                    <div class="btn bg-secondary-100  text-secondary-200 hover:shadow-inner">Load more</div>
                 </div>
             </div>
         </main>
