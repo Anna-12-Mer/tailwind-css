@@ -7,47 +7,58 @@
 </head>
 <body class="text-gray-600">
     <div class=" grid md:grid-cols-3"><!-- content wrapper -->
-        <div class="md:col-span-1">
-            <nav>
-                <div>
+        <div class="md:col-span-1 md:flex md:justify-end">
+            <nav class="text-right">
+                <div class="flex justify-between items-center">
                     <h1 class="font-bold uppercase p-4 border-b border-gray-100">
                         <a href="/" class="hover:text-gray-700">Food Menu</a>
                     </h1>
-                </div>
-                <ul>
-                    <li class="text-gray-700 font-bold"><a href="#"><span>Home</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5">
+                    <div class="px-4 cursor-pointer md:hidden" id="burger">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6">
                             <path fill-rule="evenodd"
-                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z"
+                                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
                                 clip-rule="evenodd" />
                         </svg>
+
+                    </div>
+                </div>
+                <!-- hero icons -->
+                <ul class="text-sm mt-6 hidden md:block" id="menu">
+                    <li  class="text-gray-700 font-bold py-1"><a href="#" class="px-4 flex justify-end border-r-4 border-primary"><span>Home</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 ml-2">
+                            <path
+                                d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+                            <path
+                                d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+                        </svg>
+
                     </a></li>
-                    <li><a href="#"><span>About</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5">
+                    <li class="py-1" ><a href="#" class="px-4 flex justify-end border-r-4 border-white"><span>About</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 ml-2">
                         <path fill-rule="evenodd"
                             d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM8.94 6.94a.75.75 0 11-1.061-1.061 3 3 0 112.871 5.026v.345a.75.75 0 01-1.5 0v-.5c0-.72.57-1.172 1.081-1.287A1.5 1.5 0 108.94 6.94zM10 15a1 1 0 100-2 1 1 0 000 2z"
                             clip-rule="evenodd" />
                     </svg>
-</a></li>
-                    <li><a href="#"><span>Contact</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5">
+                        </a></li>
+                    <li class="py-1" ><a href="#" class="px-4 flex justify-end border-r-4 border-white"><span>Contact</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 ml-2">
                         <path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z" />
                         <path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z" />
                     </svg>
-</a></li>
+                        </a></li>
                 </ul>
             </nav>
         </div> 
         <!-- end nav -->
         <main class="px-16 py-6 bg-gray-100 md:col-span-2" >
             <div class="flex justify-center md:justify-end">
-                <a href="#" class="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white">Log in</a>
-                <a href="#" class="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary  hover:text-white">Sign up</a>
+                <a href="#" class="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Log in</a>
+                <a href="#" class="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary  hover:text-white transition ease-out duration-500">Sign up</a>
             </div>
 
             <header>
                 <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
-                <h3 class="text-2xl font-semibold">List</h3>
+                <h3 class="text-2xl font-medium">List</h3>
             </header>
 
             <div>
@@ -108,10 +119,11 @@
                 </div>
 
                 <div class="flex justify-center">
-                    <div class="btn bg-secondary-100  text-secondary-200 hover:shadow-inner">Load more</div>
+                    <div class="btn bg-secondary-100  text-secondary-200 hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300 ">Load more</div>
                 </div>
             </div>
         </main>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
